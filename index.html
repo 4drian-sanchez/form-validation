@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de fomulario completo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/app.css">
+    
+</head>
+<body>
+
+    <section class="form-1">          
+        <form name="form" id="form">
+
+            <h1 class="form__heading">Formulario</h1>
+            
+            <fieldset class="inf-personal">
+                <legend >Informacion personal</legend>
+                
+                <div class="input__container">
+                    <label class="label" for="nombre">Nombre</label>
+                    <input
+                    id="name"
+                    name="nombre"
+                    minlength="3"
+                    maxlength="20"
+                    class="input" 
+                    type="text"
+                    required >
+                </div>
+                
+                <div class="input__container">
+                    <label class="label" for="apellido">Apellido</label>
+                    <input
+                    id="lastName" 
+                    name="Apellido"
+                    minlength="3"
+                    maxlength="20"
+                    class="input" 
+                    type="text"
+                    required >
+                </div>
+                
+                <div class="input__container">
+                    <label class="label" for="edad">Edad</label>
+                    <input
+                    id="age" 
+                    min="12"
+                    max="99"
+                    name="edad"
+                    class="input" 
+                    type="number"
+                    required >
+                </div>
+            </fieldset><!-- Nombre apellido y edad -->
+
+            <!-- btn-->
+            <fieldset class="d-flex-left">
+                <div class="input__container">
+                    <input 
+                        type="submit"
+                        value="Enviar"
+                        class="opacity not-allowed"
+                        disabled>
+                </div>
+    
+                <div class="input__container">
+                    <input class="reset" type="submit" value="reset">
+                </div>
+            </fieldset>        
+
+        </form>
+    </section>
+     
+    
+    <script 
+        type="module"
+        src="./js//app.js"> 
+    </script>
+</body>
+</html>
